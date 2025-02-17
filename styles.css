@@ -1,15 +1,42 @@
-h1 {
-  font-family: "Courier New", Courier, monospace;
-}
-.nav-left img {
-  width: 100px;
-  height: auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.nav-left {
+a {
+  text-decoration: none !important;
+  color: #000 !important;
+}
+
+a:hover {
+  color: #000;
+}
+
+.nav-left img {
+  width: 120px;
+  height: auto;
+  padding: 20px;
+  padding-left: 0px;
+}
+/*Cut the padding if we decide to switch to nofill v4*/
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  background-color: #f5f5f5;
+  background-color: #fff;
+  padding-inline: 40px;
+  height: 120px;
+}
+
+main {
+  padding: 40px;
+  background-color: #f4f4f4;
+  min-height: calc(100vh - 120px);
+}
+
+.nav-right a {
+  padding: 10px 20px;
 }
